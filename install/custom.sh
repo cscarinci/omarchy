@@ -12,7 +12,10 @@ yay -S --noconfirm --needed \
   github-cli \
   lazygit
 
+yay -S --noconfirm --needed ttf-cascadia-code-nerd ttf-cascadia-mono-nerd ttf-fira-code ttf-fira-mono ttf-fira-sans ttf-firacode-nerd ttf-iosevka-nerd ttf-iosevkaterm-nerd ttf-jetbrains-mono-nerd ttf-jetbrains-mono ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-mono
+
 yay -S --noconfirm --needed \
+    flatpak \
     emacs \
     zathura \
     zathura-pdf-poppler \
@@ -43,3 +46,6 @@ yay -S --noconfirm --needed \
     texlive-publishers \
     texlive-xetex
 
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+flatpak update
+flatpak install -y flathub app.zen_browser.zen eu.betterbird.Betterbird org.gnome.Boxes com.usebottles.bottles
