@@ -1,5 +1,5 @@
 yay -S --noconfirm --needed sddm
-if sudo systemctl is active display-manager.service; then
+if sudo systemctl is-active display-manager.service; then
     sudo systemctl disable display-manager.service
 fi
 sudo systemctl enable sddm.service
